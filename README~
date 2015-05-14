@@ -1,0 +1,39 @@
+Sihan Wu and Zhoufeng Zheng
+
+(I used mysql_connect and mysql_select_db to connect database because I hadn't realized
+I could use some files in the candyshop directly when I started and the Instructor said it is OK)
+1.Please edit conn/conn.php and admin/conn/conn.php to change database
+2.Failed to make Email function
+3.Use 'admin' with any password to login admin page.
+
+addcart.php: 	add product in cart
+cart.php: 	display and edit purchases
+checkout.php:	checkout purchases with creditcard
+chkuser.php:	check if username exists and password fits
+chkusernc.php:	check if username already existed
+index.php:	display all products
+left.php:	form for login and link for sign up
+logout.php:	end session and log out current user
+read.php:	read product information
+reg.php:	sign up new user
+removecart.php:	remove all purchases in cart
+saveorder.php:	save order information into database
+savereg.php:	save new user's information into database
+showorder.php:	show order information of current purchases
+top.php:	display current user and links for cart, home page, admin page, logout
+
+in admin directory:
+additem.php:	add new product
+changeitem.php:	change a exsited product
+chkadmin.php:	check if input fits
+default.php:	main menu for admin system
+deleteitem.php:	delete chosen product and related order_item
+deleteorder.php:delete chosen order and related order_item
+deleteuser.php:	delete chosen user
+edititem.php:	display all products and link for delete and edit
+edituser.php:	display all users and link for delete
+index.php:	entrance for admin system
+lookorder.php:	display all orders and link for delete
+savechangeitem.php: update changede product
+savenewitem.php:save added product into database
+top.php:	links for main menu and front page

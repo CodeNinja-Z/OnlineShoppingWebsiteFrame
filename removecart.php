@@ -1,0 +1,15 @@
+<?php
+session_start();
+$id=$_GET[id];
+$arraysp=explode("@",$_SESSION[producelist]);
+$arraysl=explode("@",$_SESSION[quantity]);
+for($i=0;$i<count($arraysp);$i++){
+   if($arraysp[$i]==$id){
+	  $arraysp[$i]="";
+	  $arraysl[$i]="";
+	}
+ }
+$_SESSION[producelist]=implode("@",$arraysp);
+$_SESSION[quantity]=implode("@",$arraysl);
+header("location:cart.php");
+?>
